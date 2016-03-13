@@ -1,0 +1,161 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+body{
+    background-color: #FC575E;
+    margin-bottom: 10.5vh;
+    min-height: 100%;
+}
+
+.footer{
+    background-color: #0E2134;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.login_box {
+    position: absolute;
+    bottom: 10vh;
+    width: 20vw;
+    height: 50vh;
+    left: 70vw;
+    background-color: #0E2134;
+    z-index: 1;
+    -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    display: none;
+    
+}
+
+/*---FORM STLYLING STARTS HERE--*/
+.group 			  { 
+  position:relative; 
+  margin-bottom:3vh;
+  margin-left: 2vw;
+  margin-top: 3vh;
+}
+input 				{
+  font-size:25px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:80%;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  background-color: #0E2134;
+  color: #ffffff;
+}
+input:focus{ 
+    outline:none;
+}
+label 				 {
+  color:#ffffff; 
+  font-size:23px;
+  font-weight:500;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.5s ease all; 
+  -moz-transition:0.5s ease all; 
+  -webkit-transition:0.5s ease all;
+}
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:17px;
+  color:#c9c9c9;
+}
+.bar {
+    position:relative; 
+    display:block; 
+    width:250px; 
+}
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0; 
+  position:absolute;
+  background:#ffffff; 
+  transition:0.5 ease all; 
+  -moz-transition:0.5s ease all; 
+  -webkit-transition:0.5s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+.highlight {
+  position:absolute;
+  height:60%; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.5s ease;
+  -moz-animation:inputHighlighter 0.5s ease;
+  animation:inputHighlighter 0.5s ease;
+}
+
+/*---FORM STLYLING ENDS HERE--*/
+
+.raised {
+    box-shadow: 0 3px 0 0 #000000;
+}
+.btn.outline {
+	background: none;
+	padding: 12px 22px;
+    font-size: 18px;
+}
+.outline {
+	border: 2px solid #ffffff;
+	color: #ffffff;
+}
+.outline:hover,.outline:focus,.outline:active,.outline.active{
+    color: #c9c9c9;
+    border-color: #c9c9c9;
+}
+.outline:active,.outline.active {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+
+
+#login_button {
+    margin-left: 3vw;
+    margin-top: .5vw;
+}
+#register_button {
+    margin-left: 0.5vw;
+    margin-top: .5vw;
+}
+#facebook_login{
+    margin-top: 1vw;
+    margin-left: 3vw;
+    min-width: 5vw;
+}
+
+#login_pop {
+    margin-top: 2vh;
+    margin-left: 75vw;
+    min-width: 4vw; 
+    z-index: 3;
+}
+
+#landscape {
+    display: none !important;
+}

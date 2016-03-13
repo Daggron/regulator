@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1 , minimum-scale=1, maximum-scale=1">
+         <title>Skyer| Regulator</title>
+         <!------Css Goes Here ---->
+         <link rel="stylesheet" href="css/bootstrap.css">
+         <link rel="stylesheet" href="css/main1530above.css" media="screen and (min-width:1530px)">
+         <link rel="stylesheet" href="css/maintill1529.css" media="screen and (min-width:1280px) and (max-width:1529px)">
+         <link rel="stylesheet" href="css/maintablet.css" media="screen and (min-width:750px) and (max-width:1280px) and (orientation: landscape)">
+         <link rel="stylesheet" href="css/maintabletpotrait.css" media="screen and (min-width:450px) and (max-width:850px) and (orientation : portrait)">
+         <link rel="stylesheet" href="css/mainphone.css" media="screen and (min-width:400px) and (max-width:750px) and (orientation: landscape)">
+         <link rel="stylesheet" href="css/mainphonepotrait.css" media="screen and (max-width:449px) and (orientation : portrait)">
+         <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+         
+         <!-----Font Goes Here --->
+         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+          <script src='https://www.google.com/recaptcha/api.js'></script>
+         <!-------------------------------------------------------------------------------->
+    </head>
+    <body>
+             
+        <img id="landscape" src="images/landscape.png" alt="Rotate" />
+              
+       <footer class="footer">
+         <button id="login_pop" class="btn outline" type="button">Login/Register</button>
+        <button id="cross" class=" btn outline" type="button"><i class="fa fa-chevron-down cross"></i></button>
+          <div id="login_box" class="login_box box">
+             
+              <form class="inside-box" onsubmit="return email_val_l()" method="post" action="process.php">
+
+                <div class="group">      
+                  <input id="l_email" autocomplete="off" type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+
+                <div class="group">      
+                  <input type="password" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Password</label>
+                </div>
+                 <button id="login_button" class="btn outline right_button pull-right" type="submit"  >Login</button> 
+                <button id="register_button" class="btn outline left_button" type="button" >Register</button>
+                
+                
+                 <p id="facebook_login" class="btn error"> &nbsp;Invalid Combination</p>
+                 <p id="facebook_login" class="btn error"> &nbsp;User Does Not Exist</p>
+                 <p id="l_email_error" class="btn error"> &nbsp;Invalid Email</p>
+                 
+                 <button id="facebook_login" class="btn outline" type="button"><i class="fa fa-facebook"></i> &nbsp;Login with Facebook</button>
+                <button id="google_login" class="btn outline" type="button"><i class="fa fa-google-plus"></i> &nbsp;Login with Google +</button>
+              
+
+              </form>
+   
+              
+          </div>
+          <div id="register_box" class="register_box box">
+             
+              <form class="inside-box" id="register_form" method="post" action="reg_process">
+
+                <div class="group">      
+                  <input name="name" id="name" type="text" onchange="return name_char_check()" autocomplete="off" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Name</label>
+                </div>
+                 
+                 <div class="group">      
+                  <input id="r_email"name="email"type="text" onchange="return email_val_r()"  autocomplete="off" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+                <div class="group">      
+                  <input type="text" id="mob" onchange="mob_val()" autocomplete="off" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Mobile Number</label>
+                </div>
+
+                <div class="group">      
+                  <input id="pass" type="password" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Password</label>
+                </div>
+                <div class="group">      
+                  <input id="cpass" onchange="return pass_match()" type="password" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Confirm Password</label>
+                </div>
+                 <p id="password_mismatch" class="btn error"> &nbsp;Password Do Not Match</p>
+                 <p id="chars_invalid" class="btn error" > &nbsp;Invalid Characters Used</p>
+                 <p id="r_email_error" class="btn error" > &nbsp;Invalid Email</p>
+                <p id="r_mobile_error" class="btn error" > &nbsp;Invalid Mobile Nummber</p> 
+                 
+                <button id="login_button_r" class="btn outline left_button" type="button">Login</button>
+                <button id="register_button_r" class="btn outline right_button pull-right">Register</button>
+                              
+        
+
+              </form>
+   
+              
+          </div>
+           
+       </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
