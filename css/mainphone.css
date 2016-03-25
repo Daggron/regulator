@@ -1,19 +1,233 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 body{
     background-color: #FC575E;
-    width: 100%
-    height: 100%;
-    
-}
-.footer{
-   display: none !important; 
+    margin-bottom: 50px;
 }
 
-img {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 250px;
-   height: 160px;
-   margin-top: -80px; 
-   margin-left: -125px; 
+.footer{
+    background-color: rgba(14,33,52,1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.box{
+    position: absolute;
+    bottom: 20vh;
+    width: 100vw;
+    background-color: rgba(14,33,52,0.3);
+    z-index: 1;
+    -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
+    display: none;
+    left: 0;
+}
+.inside-box{
+    opacity: 1;
+}
+.login_box {
+    height: 120vh;
+}
+.register_box {
+    height: 120vh;   
+}
+
+
+/*---FORM STLYLING STARTS HERE--*/
+.top{
+    margin: 10vh;
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:5vh;
+  margin-left: 15vw;
+  margin-top: 3vh;
+}
+input 				{
+  font-size:15px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width: 65vw;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  background-color: rgba(14,33,52,0);
+  color: #ffffff;
+}
+input:focus{ 
+    outline:none;
+}
+label 				 {
+  color:#ffffff; 
+  font-size:15px;
+  font-weight:500;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:5px;
+  transition:0.5s ease all; 
+  -moz-transition:0.5s ease all; 
+  -webkit-transition:0.5s ease all;
+}
+input:focus ~ label, input:valid ~ label 		{
+  top:-10px;
+  font-size:12px;
+  color:#ffffff;
+}
+.bar {
+    position:relative; 
+    display:block; 
+}
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0; 
+  position:absolute;
+  background:#ffffff; 
+  transition:0.5 ease all; 
+  -moz-transition:0.5s ease all; 
+  -webkit-transition:0.5s ease all;
+}
+.bar:before {
+  left:20%;
+}
+.bar:after {
+  right:40%; 
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:60%;
+}
+.highlight {
+  position:absolute;
+  height:60%; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.5s ease;
+  -moz-animation:inputHighlighter 0.5s ease;
+  animation:inputHighlighter 0.5s ease;
+}
+
+/*---FORM STLYLING ENDS HERE--*/
+
+.raised {
+    box-shadow: 0 3px 0 0 #000000;
+}
+.btn.outline {
+	background: none;
+    font-size: 12px;
+}
+.outline {
+	border: 2px solid #ffffff;
+	color: #ffffff;
+}
+.outline:hover,.outline:focus,.outline:active,.outline.active{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.outline:active,.outline.active {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+
+
+.left_button {
+    margin-left: 10vw;
+    margin-top: 1vh;
+}
+.right_button {
+    margin-right: 10%;
+    margin-top: 1vh;
+}
+
+#facebook_login{
+    margin-top: 6vh;
+    margin-left: 20vw;
+    min-width: 57vw;
+}
+#google_login{
+    margin-top: 3vh;
+    margin-left: 20vw;
+    min-width: 57vw;
+}
+
+#login_pop {
+    margin-top: 2vh;
+    margin-left: 30vw;
+    min-width: 40vw;
+    z-index: 1;
+}
+
+
+
+
+
+
+.cross {
+    font-size: 1em;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+#cross {
+    border-radius: 50%;
+    margin-left: 46vw;
+    margin-top: 2vh;
+    display: none;
+}
+
+.error {
+    background: none;
+    font-size: 15px;
+    border: 2px solid #0E2134;
+	color: #0E2134;
+    margin-top: 3vh;
+    margin-left: 35%;
+    width: 33vw;
+    display: none;
+
+}
+.error :hover,.error :focus,.error :active,.error.active{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.error:active,.error.active {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+#landscape {
+    display: none !important;
+}
+
+
+.content {
+    position: relative;
+    height: 125vh;
 }

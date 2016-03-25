@@ -43,9 +43,12 @@ body{
 
 
 /*---FORM STLYLING STARTS HERE--*/
+.top{
+    margin: 10vh;
+}
 .group 			  { 
   position:relative; 
-  margin-bottom:3vh;
+  margin-bottom:5vh;
   margin-left: 15vw;
   margin-top: 3vh;
 }
@@ -53,7 +56,7 @@ input 				{
   font-size:15px;
   padding:10px 10px 10px 5px;
   display:block;
-  width:80%;
+  width: 65vw;
   border:none;
   border-bottom:1px solid #ffffff;
   background-color: rgba(14,33,52,0);
@@ -219,7 +222,5 @@ summary {
     border-color: #ffffff;
     color: #ffffff;
 }
-#landscape {
-    display: none !important;
-}
+
 
