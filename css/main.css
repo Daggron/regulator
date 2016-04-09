@@ -1,161 +1,112 @@
-* {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+body {
+  margin: 0;
+  -moz-transition: left 0.25s ease-in-out;
+ -o-transition: left 0.25s ease-in-out;
+ -webkit-transition: left 0.25s ease-in-out;
+ transition: left 0.25s ease-in-out;
+ background: #fff;
+ font-size: 16px;
+ left: 0;
+ padding-top: 50px;
 }
-body{
-    background-color: #FC575E;
-    margin-bottom: 10.5vh;
-    min-height: 100%;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+.home-jumbotron {
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+  padding: 50px 15px;
+  margin-bottom: 40px;
+}
+/* =Jumbotron
+-------------------------------------------------------------- */
+.jumbotron {
+  color: #fff; }
 
-.footer{
-    background-color: #0E2134;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 10vh;
-    -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    
-}
-
-.login_box {
-    position: absolute;
-    bottom: 10vh;
-    width: 20vw;
-    height: 50vh;
-    left: 70vw;
-    background-color: #0E2134;
+.home-jumbotron {
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+  padding: 50px 15px;
+  margin-bottom: 40px; }
+  .home-jumbotron h2 {
+    font-size: 96px; }
+    @media (max-width: 992px) {
+      .home-jumbotron h2 {
+        font-size: 72px; } }
+    @media (max-width: 768px) {
+      .home-jumbotron h2 {
+        font-size: 48px; } }
+    @media (max-width: 480px) {
+      .home-jumbotron h2 {
+        font-size: 40px; } }
+  .home-jumbotron .lead {
     z-index: 1;
-    -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    display: none;
-    
-}
+    position: relative;
+    font-size: 24px; }
+    @media (max-width: 768px) {
+      .home-jumbotron .lead {
+        font-size: 20px; } }
+    @media (max-width: 480px) {
+      .home-jumbotron .lead {
+        font-size: 18px; } }
+  .home-jumbotron .middle-circle {
+    -moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+    border-radius: 80px;
+    background: #ffffff;
+    font-size: 60px;
+    height: 120px;
+    width: 120px;
+    line-height: 140px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: -120px;
+    z-index: 1; }
+    .basic .home-jumbotron .middle-circle {
+      color: #FC575E; }
+      /* =Home Widgets
+-------------------------------------------------------------- */
+#home-page-widgets {
+  padding: 80px 0 20px;
+  color: #FC575E; }
+  @media (max-width: 768px) {
+    #home-page-widgets {
+      margin: 0; } }
+  @media (max-width: 480px) {
+    .boxed #home-page-widgets {
+      padding: 80px 15px 20px; } }
+  .basic #home-page-widgets {
+    background: #fff; }
 
-/*---FORM STLYLING STARTS HERE--*/
-.group 			  { 
-  position:relative; 
-  margin-bottom:3vh;
-  margin-left: 2vw;
-  margin-top: 3vh;
-}
-input 				{
-  font-size:25px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:80%;
-  border:none;
-  border-bottom:1px solid #ffffff;
-  background-color: #0E2134;
-  color: #ffffff;
-}
-input:focus{ 
-    outline:none;
-}
-label 				 {
-  color:#ffffff; 
-  font-size:23px;
-  font-weight:500;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.5s ease all; 
-  -moz-transition:0.5s ease all; 
-  -webkit-transition:0.5s ease all;
-}
-input:focus ~ label, input:valid ~ label 		{
-  top:-20px;
-  font-size:17px;
-  color:#c9c9c9;
-}
-.bar {
-    position:relative; 
-    display:block; 
-    width:250px; 
-}
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0; 
-  position:absolute;
-  background:#ffffff; 
-  transition:0.5 ease all; 
-  -moz-transition:0.5s ease all; 
-  -webkit-transition:0.5s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%; 
-}
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
-}
-.highlight {
-  position:absolute;
-  height:60%; 
-  top:25%; 
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
-}
-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.5s ease;
-  -moz-animation:inputHighlighter 0.5s ease;
-  animation:inputHighlighter 0.5s ease;
-}
+.home-widget {
+  margin: 0 0 30px;
+  text-align: center; }
+  .home-widget img {
+    margin-top: 0; }
 
-/*---FORM STLYLING ENDS HERE--*/
+.home-widget-title {
+  color: #FC575E; !important;
+  margin: 10px 0 5px;
+  font-size: 28px; }
+  .home-widget-title a {
+    color: #fff !important;
+    text-decoration: none; }
 
-.raised {
-    box-shadow: 0 3px 0 0 #000000;
-}
-.btn.outline {
-	background: none;
-	padding: 12px 22px;
-    font-size: 18px;
-}
-.outline {
-	border: 2px solid #ffffff;
-	color: #ffffff;
-}
-.outline:hover,.outline:focus,.outline:active,.outline.active{
-    color: #c9c9c9;
-    border-color: #c9c9c9;
-}
-.outline:active,.outline.active {
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-
-
-#login_button {
-    margin-left: 3vw;
-    margin-top: .5vw;
-}
-#register_button {
-    margin-left: 0.5vw;
-    margin-top: .5vw;
-}
-#facebook_login{
-    margin-top: 1vw;
-    margin-left: 3vw;
-    min-width: 5vw;
-}
-
-#login_pop {
-    margin-top: 2vh;
-    margin-left: 75vw;
-    min-width: 4vw; 
-    z-index: 3;
-}
-
-#landscape {
-    display: none !important;
-}
+.bavotasan_custom_text_widget i {
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  font-size: 80px;
+  line-height: 130px;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 30px;
+  display: block;
+  border: 3px solid #fff; }

@@ -16,14 +16,14 @@ body{
     -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
     box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .box{
     position: absolute;
     bottom: 10vh;
     width: 100vw;
-    background-color: rgba(14,33,52,0.3);
+    background-color: rgba(14,33,52,0.9);
     z-index: 1;
     -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
@@ -38,7 +38,7 @@ body{
     height: 85vh;
 }
 .register_box {
-    height: 85vh;   
+    height: 85vh;
 }
 
 
@@ -46,8 +46,8 @@ body{
 .top{
     margin: 10vh;
 }
-.group 			  { 
-  position:relative; 
+.group 			  {
+  position:relative;
   margin-bottom:5vh;
   margin-left: 15vw;
   margin-top: 3vh;
@@ -62,19 +62,19 @@ input 				{
   background-color: rgba(14,33,52,0);
   color: #ffffff;
 }
-input:focus{ 
+input:focus{
     outline:none;
 }
 label 				 {
-  color:#ffffff; 
+  color:#ffffff;
   font-size:15px;
   font-weight:500;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:5px;
-  transition:0.5s ease all; 
-  -moz-transition:0.5s ease all; 
+  transition:0.5s ease all;
+  -moz-transition:0.5s ease all;
   -webkit-transition:0.5s ease all;
 }
 input:focus ~ label, input:valid ~ label 		{
@@ -83,32 +83,32 @@ input:focus ~ label, input:valid ~ label 		{
   color:#ffffff;
 }
 .bar {
-    position:relative; 
-    display:block; 
+    position:relative;
+    display:block;
 }
 .bar:before, .bar:after 	{
   content:'';
-  height:2px; 
-  width:0; 
+  height:2px;
+  width:0;
   position:absolute;
-  background:#ffffff; 
-  transition:0.5 ease all; 
-  -moz-transition:0.5s ease all; 
+  background:#ffffff;
+  transition:0.5 ease all;
+  -moz-transition:0.5s ease all;
   -webkit-transition:0.5s ease all;
 }
 .bar:before {
   left:20%;
 }
 .bar:after {
-  right:40%; 
+  right:40%;
 }
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width:60%;
 }
 .highlight {
   position:absolute;
-  height:60%; 
-  top:25%; 
+  height:60%;
+  top:25%;
   left:0;
   pointer-events:none;
   opacity:0.5;
@@ -206,11 +206,11 @@ summary {
 .error {
     background: none;
     font-size: 15px;
-    border: 2px solid #0E2134;
-	color: #0E2134;
+    border: 2px solid #ffffff;
+	color: #ffffff;
     margin-top: 3vh;
-    margin-left: 35%;
-    width: 33vw;
+    margin-left: 20vw;
+    width: 57vw;
     display: none;
 
 }
@@ -222,5 +222,11 @@ summary {
     border-color: #ffffff;
     color: #ffffff;
 }
-
-
+.modal-color-success {
+      background-color: #0E2134;
+      color: #ffffff;
+}
+#modalButton{
+    margin-bottom:20px;
+    font-size: 10px;
+}

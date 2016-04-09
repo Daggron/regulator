@@ -17,13 +17,13 @@ body{
     -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
     box-shadow:         0px -5px 0px 0px rgba(0, 0, 0, 0.5);
-    
+
 }
 .box{
     position: absolute;
     bottom: 10vh;
     width: 100vw;
-    background-color: rgba(14,33,52,0.3);
+    background-color: rgba(14,33,52,0.9);
     z-index: 1;
     -webkit-box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    0px -5px 0px 0px rgba(0, 0, 0, 0.5);
@@ -38,13 +38,13 @@ body{
     height: 80vh;
 }
 .register_box {
-    height: 80vh;   
+    height: 80vh;
 }
 
 
 /*---FORM STLYLING STARTS HERE--*/
-.group 			  { 
-  position:relative; 
+.group 			  {
+  position:relative;
   margin-bottom:3vh;
   margin-left: 35vw;
   margin-top: 3vh;
@@ -59,19 +59,19 @@ input 				{
   background-color: rgba(14,33,52,0);
   color: #ffffff;
 }
-input:focus{ 
+input:focus{
     outline:none;
 }
 label 				 {
-  color:#ffffff; 
+  color:#ffffff;
   font-size:19px;
   font-weight:500;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:5px;
-  transition:0.5s ease all; 
-  -moz-transition:0.5s ease all; 
+  transition:0.5s ease all;
+  -moz-transition:0.5s ease all;
   -webkit-transition:0.5s ease all;
 }
 input:focus ~ label, input:valid ~ label 		{
@@ -80,32 +80,32 @@ input:focus ~ label, input:valid ~ label 		{
   color:#ffffff;
 }
 .bar {
-    position:relative; 
-    display:block; 
+    position:relative;
+    display:block;
 }
 .bar:before, .bar:after 	{
   content:'';
-  height:2px; 
-  width:0; 
+  height:2px;
+  width:0;
   position:absolute;
-  background:#ffffff; 
-  transition:0.5 ease all; 
-  -moz-transition:0.5s ease all; 
+  background:#ffffff;
+  transition:0.5 ease all;
+  -moz-transition:0.5s ease all;
   -webkit-transition:0.5s ease all;
 }
 .bar:before {
   left:0%;
 }
 .bar:after {
-  right:50%; 
+  right:50%;
 }
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width:50%;
 }
 .highlight {
   position:absolute;
-  height:60%; 
-  top:25%; 
+  height:60%;
+  top:25%;
   left:0;
   pointer-events:none;
   opacity:0.5;
@@ -163,7 +163,7 @@ input:focus ~ .highlight {
 #login_pop {
     margin-top: 2vh;
     margin-left: 82vw;
-    min-width: 4vw; 
+    min-width: 4vw;
     z-index: 1;
 }
 
@@ -177,11 +177,11 @@ input:focus ~ .highlight {
 }
 
 #login_button {
-    
+
 }
 
 footer {
-    
+
 }
 
 article,
@@ -210,8 +210,8 @@ summary {
 .error {
     background: none;
     font-size: 15px;
-    border: 2px solid #0E2134;
-	color: #0E2134;
+    border: 2px solid #ffffff;
+	color: #ffffff;
     margin-top: 3vh;
     margin-left: 35%;
     width: 33vw;
@@ -227,6 +227,11 @@ summary {
     color: #ffffff;
 }
 
-#landscape {
-    display: none !important;
+.modal-color-success {
+      background-color: #0E2134;
+      color: #ffffff;
+}
+#modalButton{
+    margin-bottom:20px;
+    font-size: 10px;
 }

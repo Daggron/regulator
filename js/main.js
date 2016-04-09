@@ -31,14 +31,12 @@ function email_val_l(){
     }
         else{
             document.getElementById('l_email_error').style.display="none";
-            return true
+            document.login_form.submit();
     }
 };
 var namechk=0,mobchk=0,emailchk=0,passmatch=0;
 function name_char_check(){
     var name=document.getElementById('name').value;
-    var height1=document.getElementById('register_box').height;
-    var incriment='5';
     var chars = /^[a-zA-Z-, ]+$/; 
         if(!name.match(chars)){
             document.getElementById('chars_invalid').style.display="block";  
@@ -103,5 +101,13 @@ function final_val(){
     if(namechk&&mobchk&&emailchk&&passmatch){
         document.getElementById('register_form').submit();
     }
+};
+function r_process(){
+  if((namechk=0)||(mobchk=0)||(emailchk=0)||(passmatch=0)){
+      return false
+  }
+  else{
+      document.register_form.submit();
+  }
 };
 
