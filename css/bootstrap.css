@@ -1082,7 +1082,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+    font-weight: 500;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -2565,6 +2566,7 @@ output {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-top: 5px;
 }
 .form-control:focus {
   border-color: #66afe9;
