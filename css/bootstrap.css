@@ -69,6 +69,7 @@ mark {
 }
 small {
   font-size: 80%;
+    color: #ffffff !important;
 }
 sub,
 sup {
@@ -1493,7 +1494,8 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: #777;
+  color: #fff ;
+    
 }
 blockquote footer:before,
 blockquote small:before,

@@ -42,10 +42,11 @@
 				</header>
 				<section class="contact-block cart container">
 					<div class="row shop-calculation checkout">
+                        <form id="first_form" action="process/firstSetup.php" class="update-form" method="post">
 						<div class=" col-sm-offset-4 col-sm-4 col-xs-12">
 							<div class="block">
 								<h2>First Time Setup</h2>
-								<form id="first_form" action="firstSetup.php" class="update-form" method="post">
+								
 									<fieldset>
 										<select id="noSubjects" name="noSubjects"data-jcf='{"wrapNative": false}' required>
 											<option value="">No of Subjects</option>
@@ -122,4 +123,5 @@
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/setup.js"></script>
+    </body>
 </html>

@@ -59,7 +59,6 @@ body {
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
     border-radius: 80px;
-    background: #ffffff;
     font-size: 60px;
     height: 120px;
     width: 120px;
@@ -70,7 +69,7 @@ body {
     bottom: -120px;
     z-index: 1; }
     .basic .home-jumbotron .middle-circle {
-      color: #FC575E; }
+      color: #FFFFFF; }
       /* =Home Widgets
 -------------------------------------------------------------- */
 #home-page-widgets {

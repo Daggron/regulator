@@ -30,38 +30,21 @@ else{
          <!-------------------------------------------------------------------------------->
     </head>
     <body>
-        <section class="content">
+       <section class="content">
                     <div class="basic">
 
                          <div class="container">
                            <div class="row">
                              <div class="home-jumbotron jumbotron col-lg-10 col-lg-offset-1 col-sm-12">
-                               <h2>Skyer REGULATOR</h2>
+                                  <i class="middle-circle fa fa-power-off fa-spin"></i>
+                               <h2><small>SKYER</small> REGULATOR</h2>
                                <p class="lead">Got something important to say? Then make it stand out by using the jumbo headline option and get your visitor&rsquo;s attention right away.</p>
 
-                               <i class="middle-circle fa fa-power-off fa-spin"></i>
+                              
                              </div>
                            </div>
                          </div>
-                         <div id="home-page-widgets">
-                             <div class="container">
-                                 <div class="row">
-                                         <aside class="home-widget col-md-3 col-sm-4 bavotasan_custom_text_widget hidden-xs"><img src="http://placehold.it/150x150" class="img-circle aligncenter" /><h3 class="home-widget-title">Responsive Design</h3>
-                                       <div class="textwidget">
-                                         Resize your browser to see how Ward will adjust for desktops, tablets and handheld devices.		</div>
-                                       </aside><aside class="home-widget col-md-3 col-sm-4 bavotasan_custom_text_widget hidden-xs"><img src="http://placehold.it/150x150" alt="Fully Customizable" class="img-circle aligncenter" /><h3 class="home-widget-title">Fully Customizable</h3>
-                                       <div class="textwidget">
-                                         Take advantage of the new Theme Options customizer to preview your changes before putting them live.		</div>
-                                       </aside><aside id="bavotasan_custom_text_widget-4" class="home-widget col-md-3 col-sm-4 bavotasan_custom_text_widget hidden-xs"><img src="http://placehold.it/150x150" alt="Bootstrap" class="img-circle aligncenter" /><h3 class="home-widget-title">Bootstrap</h3>
-                                       <div class="textwidget">
-                                         Bootstrap already has a ton of great elements. That's why we included a bunch of them in Ward.		</div>
-                                       </aside><aside id="bavotasan_custom_text_widget-5" class="home-widget col-md-3 hidden-sm bavotasan_custom_text_widget hidden-xs"><img src="http://placehold.it/150x150" alt="Bold Typography" class="img-circle aligncenter" /><h3 class="home-widget-title">Bold Typography</h3>
-                                       <div class="textwidget">
-                                         Readability is key with all sites. Good thing Ward uses some of Google's most popular fonts.		</div>
-                                       </aside>
-                                 </div>
-                             </div>
-                     </div>
+                        
              </div>
 
         </section>
